@@ -40,3 +40,33 @@ img{
 .main-content{
     flex-grow: 1;
 }
+
+/* .static-boxes{
+    display: flex;
+} */
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 200px; */
+    height: 200px;
+    font-size: 30px;
+    border: 10px solid #333;
+    background-color: rgba(218, 112, 214, 0.619);
+}
+
+/* static = default, absolute, relative, sticky, fixed */
+/* top, right, bottom, left */
+/* z-index */
+
+/* static elem. top, right,bottom... z-index larni qabul qilmaydi */
+.box-static{
+    position: static;
+}
+
+.box-relative{
+    position: relative;
+    z-index: -1;
+    top: 50px;
+    left: 50px;
+}
