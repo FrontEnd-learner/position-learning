@@ -59,14 +59,44 @@ img{
 /* top, right, bottom, left */
 /* z-index */
 
+.static-boxes{
+    margin-bottom: 200px;
+}
 /* static elem. top, right,bottom... z-index larni qabul qilmaydi */
 .box-static{
     position: static;
 }
-
+/* relative-aloqador, turgan joyidan siljiydi */
 .box-relative{
     position: relative;
     z-index: -1;
-    top: 50px;
-    left: 50px;
+    /* top: 50px; */
+    /* left: 50px; */
+}
+.box-absolute{
+    position: absolute;
+}
+
+/* Next video */
+.parent {
+    height: 250px;
+    border: 10px solid #222;
+    background-color: rgba(30, 143, 255, 0.4);
+}
+.parent-static {
+    position: static;
+}
+.child {
+    position: absolute;
+    right: 0;
+    /* width: 130px; */
+    height: 130px;
+    background-color: rgba(255, 255, 0, 0.8);
+}
+.parent-text {
+    font-size: 30px;
+    line-height: 30px;
+}
+.parent-relative {
+    position: relative;
 }
